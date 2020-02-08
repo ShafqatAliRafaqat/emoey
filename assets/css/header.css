@@ -1,0 +1,235 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+.navbar-position {
+	padding-left: 15%;
+	padding-right: 15%;
+	background-color: #14a3a7;
+}
+
+.navbar-header{
+	background-color: #14a3a7;
+}
+/*
+.nav{
+	background-color: #fff;
+}
+*/
+.navbar-default {
+	border-color: #14a3a7;
+}
+
+.navbar-brand {
+	position: absolute;
+	left: 20px;
+	top: -14px;
+	text-align: center;
+	margin: auto;
+	cursor: default;
+}
+.navbar-nav{
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+.navbar-toggle {
+	z-index: 3;
+}
+
+.custom-navbar {
+	font-weight: 400;
+}
+
+/*.navbar-default {
+	box-shadow:1px 0.1px 15px grey
+}*/
+
+.navbar {
+	max-height: 40px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-brand>img {
+	display: inline;
+	margin-top: -25px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #14a3a7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:#ffffff;
+}
+
+
+
+.underlined-link:before {
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 1.5px;
+	bottom:8px;
+	left: 5%;
+	background-color: #fff;
+  visibility: hidden;
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.underlined-link:hover:before,  .ispageactive:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*login bar start*/
+
+.login-bar {
+	background-color: #ffffff;
+	height: 30px;
+	text-align: right;
+	padding-right: 100px;
+}
+
+.login {
+	padding-top: 5px;
+}
+
+.login>a {
+	color: #fff;
+	text-transform: uppercase;
+	padding-right: 30px;
+}
+
+
+/*login bar */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.login-bar {
+		padding-right: 0px;
+	}
+	.login>a{
+		padding-right: 20px;
+	}
+}
+
+.product-pricing{
+	height: 224px;
+    overflow-y: auto;
+}
+.margins{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+
+.modalheadercustom{
+	padding:10px;
+}
+
+.verticalLine {
+    border-left: thin solid rgba(67, 67, 67, 0.54);
+}
+.facebookbuttonoverallmargin{
+	margin: 20px;
+}
+.footerlogin{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.emoeylink:hover{
+	color: #107e81;
+}
+ .emoeylink{
+	color: #14a3a7;
+}
+.emoey-input{
+	border: 1px solid #14a3a7;
+}
+.checkout-input{
+	background-color: #ccc;
+}
+.btn-emoey{
+	background-color: #14a3a7;
+	color: #fff;
+	border-radius: 0px;
+}
+.m_l_a
+{
+	width: 7% !important;
+}
+@media screen and (max-width: 600px) {
+.navbar-brand>img {
+    display: inline;
+    margin-top: -25px;
+    width: 95px;
+}
+.m_l_a {
+    width: 20% !important;
+}
+
+}
+.btn-emoey:hover{
+	color:#fff;
+	background-color: #129a9e;
+}
+
+.headerchangepassword{
+	color: white;
+    font-weight: 600;
+    font-family: monospace;
+}
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Emoey</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/booking.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!--
+	<script>
+		$(document).ready(function () {
+			$(".card-image").click(function () {
+				$("#cardsize").slideDown("slow");
+			});
+			$("#cardsize").click(function () {
+				$(".card-image").slideUp("slow");
+				$("#cardsize").slideUp("slow");
+				$(".cardtype").fadeIn("slow");
+			});
+			$("#add-voice").click(function () {
+				$("#add-voice").hide();
+				$("#add-voice-btn").show();
+			});
+			$(".add-message").click(function () {
+				$("#add-message-area").slideDown("slow");
+			});
+			$("#addon-btn").click(function () {
+				$("#add-message-area").slideUp("slow");
+				$("#add-voice-btn").hide();
+				$(".cardtype").slideUp("slow");
+				$(".addon-section").slideDown("slow");
+			});
+			$("#checkout-btn").click(function () {
+				$(".basket").slideUp("slow");
+				$(".checkout-section").slideDown("slow");
+			});
+		});
+	</script>
+-->
+	<style>
+		.checkout-section ul {
+			color: #fff;
+			background-color: #555555;
+		}
+		
+		.checkout-section .nav-tabs>li {
+			color: #fff;
+		}
+		
+		.checkout-section .nav-tabs>li.active>a {
+			background-color: #3796c7;
+		}
+		
+		.checkout-section .nav>li>a:focus,
+		.nav>li>a:hover {
+			background-color: rgba(55, 150, 199, 0.85);
+		}
+		
+		.li-header {
+			border: none !important;
+			color: #fff !important;
+		}
+		
+		.checkout-textbox {
+			height: 50px;
+			border: 2px solid #14a3a7;
+		}
+		
+		.nav-border {
+			border: none !important;
+		}
+		
+		#tab1 .signin-button {
+			-webkit-border-radius: 5;
+			-moz-border-radius: 5;
+			border-radius: 5px;
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 20px;
+			background: #14a2a7;
+			padding: 10px 20px 10px 20px;
+			text-decoration: none;
+			width: 100%;
+		}
+		
+		#tab1 {
+			background-color: #ccc;
+		}
+		
+		.tab-content {
+			background-color: #ccc;
+			height: 300px;
+		}
+		
+		.add-contacts button {
+			width: 100%;
+		}
+		
+		.checkout-section {
+			margin-top: 125px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!--			header-->
+			<header>
+				<div class="col-md-12 login-bar">
+					<div class="login"> <a>Login</a> <a>sign up</a> </div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="custom-navbar">
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						</div>
+						<a class="navbar-brand" href="#"><img src="img/logo.png" width="117"></a>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-position" id="navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="#">weeding</a></li>
+								<li><a href="#">coorporate giveaways</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">home</a></li>
+								<li><a href="#">baskets</a></li>
+								<li><a href="#">talking cards</a></li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</header>
+			<div class="checkout-section">
+				<div class="container">
+					<ul class="nav nav-tabs nav-justified nav-border">
+						<li class="active nav-border"><a class="li-header" data-toggle="tab" href="#tab1">1. Sign In</a></li>
+						<li><a class="li-header" data-toggle="tab" href="#tab2">2. Reciver</a></li>
+						<li><a class="li-header" data-toggle="tab" href="#tab3">3. Invoice</a></li>
+						<li><a class="li-header" data-toggle="tab" href="#tab4">4. Let the swan fly</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="tab1" class="tab-pane fade in active">
+							<div class="col-sm-5">
+								<div class="form-group">
+									<input type="email" class="form-control checkout-textbox" id="exampleInputEmail1" placeholder="emoey id or email"> </div>
+								<div class="form-group">
+									<input type="email" class="form-control checkout-textbox" id="exampleInputEmail1" placeholder="password"> </div>
+								<button type="submit" class="btn signin-button">Sign In</button>
+							</div>
+							<div class="col-sm-1"> </div>
+							<div class="col-sm-5">
+								<h4>dont have a account no problem</h4>
+								<input type="image" src="img/fb-login.png" alt="facebook login" width="300">
+								<h4>or</h4>
+								<input type="image" src="img/sign-up.png" alt="sign up" width="300"> </div>
+						</div>
+						<div id="tab2" class="tab-pane fade">
+							<div class="add-contacts">
+								<button type="button" class="btn">add from contacts</button>
+							</div>
+							<h3>Provide info of your loved one, to whom you want to send the gift</h3>
+							<div class="clkearfix"></div>
+							<div class="col-sm-5">
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="emoey id or email"> </div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="password"> </div>
+							</div>
+							<div class="col-sm-1"></div>
+							<div class="col-sm-5">
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="emoey id or email"> </div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="password"> </div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="">
+								<button type="button" class="btn">submit</button>
+							</div>
+						</div>
+						<div id="tab3" class="tab-pane fade">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-10">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Firstname</th>
+												<th>Lastname</th>
+												<th>Age</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Anna</td>
+												<td>Pitt</td>
+												<td>35</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-sm-1"></div>
+						</div>
+						<div id="tab4" class="tab-pane fade"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="container-fluid section3-bg">
+		<div class="row">
+			<div class="col-sm-3"> </div>
+			<div class="col-sm-6 ">
+				<div class="contact">
+					<h3>WANT TO CONTACT US?</h3>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" id="username" placeholder="username"> </div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" id="username" placeholder="email"> </div>
+					</div>
+					<div class="col-md-10">
+						<div class="form-group">
+							<textarea class="form-control" rows="1" id="comment" placeholder="Type your message"></textarea>
+						</div>
+					</div>
+					<div class="col-md-2 padding">
+						<div class="form-group">
+							<button type="submit" class="btn btn-default bt">send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+			<div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-3 ">
+					<h5 class="copyright">&copy; 2016 EMOEY,INC</h5> </div>
+				<div class="col-sm-4 "> <img class="social-icon" src="img/intagram.png" width="30"> <img class="social-icon" src="img/twiter.png" width="30"> <img class="social-icon" src="img/facebook.png" width="30"> </div>
+				<div class="col-sm-3 ">
+					<h5 class="copyright">PRIVACY POLICY</h5> </div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</div>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
