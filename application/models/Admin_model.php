@@ -14,7 +14,8 @@ class admin_model extends CI_Model {
 	{
 		 $this->db->select('id');
 		$this->db->where('username',$username);
-		$this->db->where('password',MD5($password));		
+		// $this->db->where('password',MD5($password));		
+		$this->db->where('password',$password);		
 		$query = $this->db->get('admin');
 
 		if($query->num_rows() == 1) {
